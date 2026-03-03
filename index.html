@@ -3,12 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Site</title>
+    <title>my-portfolio</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <h1>Hello</h1>
-    <button id="btn">Click</button>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#">okoge13th</a>
+
+        <button
+          class="menuBtn"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          ☰
+        </button>
+
+        <nav class="nav" id="nav">
+          <a href="#about">About</a>
+          <a href="#music">Music</a>
+          <a href="#live">Live</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow">Grunge / Alt</p>
+          <h1 class="hero__title">まだ途中の人間が鳴らす音</h1>
+          <p class="hero__lead">感情をぶちまけられる場所を作る。</p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#music">聴く</a>
+            <a class="btn btn--ghost" href="#live">ライブ</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section__title">About</h2>
+          <p class="section__text">
+            自分もまだ途中。だからこそ、同じように苦しい人の感情が解放されるライブをしたい。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="music">
+        <div class="container">
+          <h2 class="section__title">Music</h2>
+
+          <div class="cards">
+            <article class="card">
+              <h3 class="card__title">Demo Track 1</h3>
+              <p class="card__text">ざらついた歪みと静→爆発。</p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Demo Track 2</h3>
+              <p class="card__text">叫びと余韻。</p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Demo Track 3</h3>
+              <p class="card__text">モッシュのためのBPM。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="live">
+        <div class="container">
+          <h2 class="section__title">Live</h2>
+          <ul class="list">
+            <li>2026-03-xx / Osaka / 某ライブハウス（仮）</li>
+            <li>2026-04-xx / Osaka / 某ライブハウス（仮）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__text">連絡先（仮）：yourmail@example.com</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <small>© okoge13th</small>
+      </div>
+    </footer>
 
     <script src="./main.js"></script>
   </body>
